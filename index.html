@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>panama</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.5.0/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+  		$('.bxslider').bxSlider({
+  			
+  			controls: false,
+  			pagerCustom: '#bx-pager'
+
+  		});
+	});
+	</script>
+	<script type="text/javascript">
+
+	$(function() {
+			var pull 		= $('#touch-menu');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 500 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+
+	<script>
+    $(document).ready(function() {
+        var RBStickyNav = $('.RBsticky-element').offset().top;
+        var stickyNav = function() {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > RBStickyNav) {
+                $('.RBsticky-element').addClass('RBSticky');
+            } else {
+                $('.RBsticky-element').removeClass('RBSticky');
+            }
+        };
+        stickyNav();
+        $(window).scroll(function() {
+            stickyNav();
+        });
+    });
+	</script>
+
+	<script type="text/javascript">
+	
+	$(document).ready(function(){
+ 		 $('.slider1').bxSlider({
+   			slideWidth: 200,
+    		minSlides: 2,
+    		maxSlides: 5,
+    		slideMargin: 30,
+    		pager: false,
+ 		 });
+	});
+	</script>
+
+	<script type="text/javascript">
+	
+	$(document).ready(function(){
+ 		 $('.slider2').bxSlider({
+   			slideWidth: 200,
+    		minSlides: 2,
+    		maxSlides: 5,
+    		slideMargin: 30,
+    		pager: false,
+ 		 });
+	});
+	</script>
+
+</head>
+<body>
+	<div class="wrap">
+
+		<div class="header">
+			<div class="menu">
+				<ul>
+					<li>
+						<a href="#">
+							О магазине
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Baby клуб
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Доставка и оплата
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Новости
+						</a>
+					</li>
+					<li class="contact">
+						<a href="#">
+							Контакты
+						</a>
+					</li>
+				</ul>
+			</div><!--end menu-->
+
+			<div class="off">
+				<button type="button" class="none ">
+					<i class="fa fa-power-off" aria-hidden="true"></i>
+						<span>Вход</span>
+				</button>
+				<button type="button" class="none ">
+					<i class="fa fa-heart-o" aria-hidden="true"></i>
+						<span>Избранное</span>
+				</button>
+				<button type="button" class="cart">
+					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+						<span>Корзина</span>
+				</button>
+				
+			</div><!--end off-->
+		</div><!--end header-->
+
+		<div class="header2">
+
+			<div class="callback">
+				<p>(044) 593 82 39</p>
+				<p>0(800) 50 77 12</p>
+				<button type="button">Обратный звонок</button>
+			</div><!--end callback-->
+
+			<div class="logo">
+				<a href=""><img src="images/logo.jpg"></a>
+			</div><!--end logo-->
+
+			<div class="search">
+				<form action="" method="post" id="search">
+					
+  					<input type="text" name="" value="поиск" onblur="if(this.value=='') this.value='поиск';" onfocus="if(this.value=='поиск') this.value='';" class="input" />
+  					<input type="submit" name="" value="" class="submit" />
+  					
+				</form>
+				
+			</div><!--end search-->
+		</div><!--end header2-->
+
+		<div class="obj">
+
+				<div class="container  RBsticky-element">
+					<a href="#" id="touch-menu">
+						<i class="fa fa-bars"></i>
+					</a>
+					<nav>
+						<ul class="nav clearfix">
+							<li>
+								<a href="#top">
+									Игры и игрушки
+								</a>
+							</li>
+							<li>
+								<a href="#s_2">
+									Школа и Творчeство
+								</a>
+							</li>
+							<li>
+								<a href="#s_3">
+									Одежда
+							</a>
+							</li>
+							<li>
+								<a href="#s_4">
+									Обувь
+								</a>
+							</li>
+							<li>
+								<a href="#s_5">
+									Кухня и Кормление
+								</a>
+							</li>
+							<li>
+								<a href="#s_4">
+									Гигиена и Уход
+								</a>
+							</li>
+							<li>
+								<a href="#s_4">
+									Спорт и Отдых
+								</a>
+							</li>
+							<li>
+								<a href="#s_4">
+									Детская и Коляски
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div><!--end container-->
+		</div><!--end obj-->
+
+		<div class="lego">
+			<p>Panama.ua  >  Игрушки  >  Детские конструкторы  >  LEGO</p>
+		</div>
+
+		<div class="creator">
+
+			<div class="slider">
+
+				<ul class="bxslider">
+					<li>
+						<img src="images/house.jpg">
+
+					</li>
+					
+				
+					<li>
+						<img src="images/house-2.jpg">
+					</li>
+					<li>
+						<img src="images/house-3.jpg">
+					</li>
+					<li>
+						<img src="images/house-4.jpg">
+					</li>
+					<li>
+						<img src="images/house-5.jpg">
+					</li>
+				</ul>
+
+				<div id="bx-pager">
+  					<a data-slide-index="0" href=""><img src="images/house.jpg" /></a>
+  					
+  					<a data-slide-index="1" href=""><img src="images/house-2.jpg" /></a>
+  					<a data-slide-index="2" href=""><img src="images/house-3.jpg" /></a>
+  					<a data-slide-index="3" href=""><img src="images/house-4.jpg" /></a>
+  					<a data-slide-index="4" href=""><img src="images/house-5.jpg" /></a>
+				</div><!--end bx-pager-->
+
+			</div><!--end slider-->
+
+			<div class="content">
+				 <div class="name">
+				 		<p class="p_lego">Lego Creator</p>
+						<h2>Домик на холме, большая коробка с деталями и кубиками</h2>
+				</div>
+					<div class="otv otv_1">
+						<p> <span class="cen">5748</span> грн<p>
+						
+						<p class="line">6574 грн</p>
+					</div>
+					<div class="otv otv_2">
+						<div class="star"><img src="images/star_2.png"></div>
+						<div class="star"><img src="images/star_2.png"></div>
+						<div class="star"><img src="images/star_2.png"></div>
+						<div class="star"><img src="images/star_2.png"></div>
+						<div class="star"><img src="images/star_2.png"></div>
+
+						<a href="#"> 54 отзыва</a>
+
+					</div>
+					<div class="otv otv_3">
+						<a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="https://vk.com"><i class="fa fa-vk" aria-hidden="true"></i></a>
+						<a href="https://plus.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+					</div>
+
+					<div class="size">
+						<p>Размеры</p>
+						<button type="button" class="b1">35</button>
+						<button type="button">37</button>
+						<button type="button">39</button>
+						<button type="button">41</button>
+						<button type="button">43</button>
+						<button type="button">39</button>
+						<button type="button">41</button>
+						<button type="button">43</button>
+						
+					</div>
+
+					<div class="buy">
+						<div class="buy_1">
+							<p> В наличии!<span> Код товара: 382743</span></p>
+							<button type="button">Купить</button>
+							<i class="fa fa-heart-o" aria-hidden="true"></i>
+
+							
+						</div><!--end buy_1-->
+
+						<div class="buy_2">
+							<p> Бесплатная доставка!</p>
+							<p> Гарантия!</p>
+						</div><!--end buy_2-->
+
+					</div><!--end buy-->
+
+					<div class="description">
+						<h3> Описание товара</h3>
+						<p>Из этой прекрасной двухэтажной виллы (LEGO № 5771) из серии LEGO Creator можно  К тому же из виллы можно собрать еще два других дома. </p>
+						<div id="block" style="display:none;">
+                		
+                			Домик оснащен всеми необходимыми для большой семьи удобствами и окружен белым забором. На первом ярусе расположена гостиная. 
+							</div>
+						
+						<div class="text" onClick="toggle('block');">Полный текст</div>
+
+					</div><!--end description-->
+			</div> <!--end content-->
+		</div><!--end creator-->
+
+
+
+		<div class="similar">
+
+			<h2>Похожие товары</h2>
+
+			<div class="slidr_2">
+
+					<div class="slider1">
+
+  						<div class="slide">
+  							<img src="images/pic1.jpg" />
+  							<h4>Hasbro</h4>
+  							<p>Игровой набор Летающие пони, Пинки Пай</p>
+  							<p class="grey">850 грн</p>
+  							<p>719 грн</p>
+  						</div>
+  						<div class="slide">
+  							<img src="images/pic2.jpg" />
+  							<h4>DigiBirds Silverlit</h4>
+  							<p> Интерактивная птичка Бэлла со свистком</p>
+  							<br>
+  							<p>449</p>
+  						</div>
+  						<div class="slide">
+  							<img src="images/pic3.jpg" />
+  							<h4>Mattel Lori Nocotoy</h4>
+  							<p> Вооруженный герой Max Steel с трюком </p>
+  							<br>
+  							<p>99 гр</p>
+  						</div>
+ 						<div class="slide">
+ 							<img src="images/pic4.jpg" />
+ 							<h4>DigiBirds Silverlit</h4>
+  							<p> Интерактивная птичка Бэлла со свистком </p>
+  							<br>
+  							<p>449</p>
+ 						</div>
+ 						<div class="slide">
+ 							<img src="images/pic5.jpg" />
+ 							<h4>Keenway</h4>
+  							<p>Электронный кассовый аппарат и весы</p>
+  							<p class="grey">745 грн</p>
+  							<p>599 грн</p>
+ 						</div>
+					</div><!--end slider1 -->
+					
+				</div><!--end slidr_2"-->
+				
+			</div> <!--end similar-->
+
+
+		<div class="similar_2">
+
+				<h2>Купившие этот товар, так же интересуются</h2>
+
+				<div class="slidr_3">
+
+					<div class="slider2">
+
+  						<div class="slide">
+  							<img src="images/pic6.jpg" />
+  							<h4>Hasbro</h4>
+  							<p>Игровой набор Летающие пони, Пинки Пай</p>
+  							<p class="grey">850 грн</p>
+  							<p>719 грн</p>
+  						</div>
+  						<div class="slide">
+  							<img src="images/pic7.jpg" />
+  							<h4>DigiBirds Silverlit</h4>
+  							<p> Интерактивная птичка Бэлла со свистком</p>
+  							<br>
+  							<br>
+  							<p>449</p>
+  						</div>
+  						<div class="slide">
+  							<img src="images/pic8.jpg" />
+  							<h4>Mattel Lori Nocotoy</h4>
+  							<p> Вооруженный герой Max Steel с трюком </p>
+  							<br>
+  							<br>
+  							<p>99 гр</p>
+  						</div>
+ 						<div class="slide">
+ 							<img src="images/pic9.jpg" />
+ 							<h4>DigiBirds Silverlit</h4>
+  							<p> Интерактивная птичка Бэлла со свистком </p>
+  							<br>
+  							<br>
+  							<p>449</p>
+ 						</div>
+ 						<div class="slide">
+ 							<img src="images/pic10.jpg" />
+ 							<h4>Keenway</h4>
+  							<p>Электронный кассовый аппарат и весы</p>
+  							<p class="grey">745 грн</p>
+  							<p>599 грн</p>
+ 						</div>
+					</div><!--end slider2 -->
+					
+				</div><!--end slidr_3"-->
+				
+		</div> <!--end similar_2-->
+
+		<div class="futter">
+
+			<div class="col col-1">
+				<a href=""><h3>Panama.UA</h3></a>
+				<p>Самый детский интернет магазин © 2012-2015 </p>
+				<a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="https://vk.com"><i class="fa fa-vk" aria-hidden="true"></i></a>
+				<a href="https://plus.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+				
+			</div>
+
+			<div class="col col-2">
+				<ul>
+					<li><a href="#" class="home">О магазине</a></li>
+					<li><a href="#">Baby клуб</a></li>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Контакты</a></li>
+	
+				</ul>
+				
+			</div>
+
+			<div class="col col-3">
+				<ul>
+					<li><a href="#" class="home">Игрушки</a></li>
+					<li><a href="#">Школа и творчество</a></li>
+					<li><a href="#">Одежда и Обувь</a></li>
+					<li><a href="#">Малышам</a></li>
+					<li><a href="#">Гигиена и уход</a></li>
+					<li><a href="#">Спорт и отдых</a></li>
+					<li><a href="#">Интерьер и текстиль</a></li>
+				</ul>
+				
+			</div>
+
+			<div class="col col-4">
+
+				<div class="mail">
+					<form action="" method="post" id="mail">
+
+  						<input type="text" name="" value="Е-mail" onblur="if(this.value=='') this.value='Е-mail';" onfocus="if(this.value=='Е-mail') this.value='';" class="input" />
+
+					</form>
+				
+				</div><!--end mail-->
+				<p>Узнавайте первыми о новинках  и распродажах </p>
+				<p class="num">(044) 593 82 39 , 0(800) 50 77 12</p>
+				
+				<button type="button">Обратный звонок</button>
+
+				
+			</div>
+
+			
+		</div>
+
+
+		
+		
+		
+	</div><!--end wrap-->
+
+</body>
+</html>
